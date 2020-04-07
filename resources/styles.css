@@ -1,0 +1,49 @@
+#clockDate {
+  font-size: 28;
+  font-family: Colfax;
+  text-length: 32;
+  text-anchor: middle;
+  x: 50%;
+  y: 33;
+  fill: black;
+}
+
+#clockTime {
+  font-size: 60;
+  font-family: Colfax;
+  text-length: 32;
+  text-anchor: middle;
+  x: 50%;
+  y: 90;
+  fill: black;
+}
+
+#heartRate {
+  font-size: 32;
+  font-family: Colfax;
+  text-length: 32;
+  text-anchor: start;
+  x: 45;
+  y: 285;
+  fill: black;
+}
+
+#stepCount {
+  font-size: 32;
+  font-family: Colfax;
+  text-length: 32;
+  text-anchor: end;
+  x: 245;
+  y: 285;
+  fill: black;
+}
+
+#heartRateImage {
+  x: 10;
+  y: 261;
+}
+
+#stepCountImage {
+  x: 255;
+  y: 261;
+}

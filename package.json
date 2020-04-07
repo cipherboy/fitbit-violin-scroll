@@ -1,0 +1,28 @@
+{
+  "fitbit": {
+    "appUUID": "278b6b9a-9aa5-4779-b76d-76fefe9812f9",
+    "appType": "clockface",
+    "appDisplayName": "Violin Scroll",
+    "iconFile": "resources/icon.png",
+    "wipeColor": "",
+    "requestedPermissions": [
+      "access_heart_rate",
+      "access_activity",
+      "access_user_profile"
+    ],
+    "buildTargets": [
+      "meson",
+      "gemini",
+      "mira"
+    ],
+    "i18n": {
+      "en": {
+        "name": "Violin Scroll"
+      }
+    },
+    "defaultLanguage": "en-US"
+  },
+  "devDependencies": {
+    "@fitbit/sdk": "~4.1.0"
+  }
+}

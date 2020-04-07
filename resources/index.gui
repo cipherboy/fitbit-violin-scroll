@@ -1,0 +1,9 @@
+<svg class="background">
+  <image href="watch.jpg" />
+  <text id="clockDate" />
+  <text id="clockTime" />
+  <text id="heartRate" />
+  <text id="stepCount" />
+  <image id="heartRateImage" href="quarter.png" width="30" height="30" />
+  <image id="stepCountImage" href="steps.png" width="30" height="30" />
+</svg>
