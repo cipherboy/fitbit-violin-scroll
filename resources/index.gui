@@ -1,5 +1,6 @@
 <svg class="background">
   <image href="watch.jpg" />
+  <image id="batteryImage" href="battery-100.png" width="40" height="20" />
   <text id="clockDate" />
   <text id="clockTime" />
   <text id="heartRate" />

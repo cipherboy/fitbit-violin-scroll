@@ -63,6 +63,7 @@ function updateHR() {
   var localTimestamp = Date.now();
   if ((hrmLastTimestamp + 2*updateDelay) < localTimestamp) {
     hrLabel.text = '--';
+    hrImage.href = "rest.png";
     return;
   }
   
@@ -70,12 +71,16 @@ function updateHR() {
     hrLabel.text = heartRate;
   } else {
     hrLabel.text = '--';
+    hrImage.href = "rest.png";
   }
 
+  let level0 = user.restingHeartRate + 10;
   let level1 = user.restingHeartRate + 25;
   let level2 = user.restingHeartRate + 50;
 
-  if (heartRate <= level1) {
+  if (heartRate <= level0) {
+    hrImage.href = "rest.png";
+  } else if (heartRate <= level1) {
     hrImage.href = "quarter.png";
   } else if (heartRate <= level2) {
     hrImage.href = "eighth.png";
@@ -105,9 +110,21 @@ if (HeartRateSensor) {
   hrLabel.style.display = "none";
 }
 
+const batteryImage = document.getElementById("batteryImage");
+
 // Battery API
 function updateBattery() {
-  
+  if (battery.chargeLevel <= 20) {
+    batteryImage.href = "battery-0.png";
+  } else if (battery.chargeLevel <= 40) {
+    batteryImage.href = "battery-20.png";
+  } else if (battery.chargeLevel <= 60) {
+    batteryImage.href = "battery-50.png";
+  } else if (battery.chargeLevel <= 80) {
+    batteryImage.href = "battery-75.png";
+  } else {
+    batteryImage.href = "battery-100.png";
+  }
 }
 
 function intervalFunction() {
